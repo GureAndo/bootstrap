@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fonctionnement bootstrap</title>
+
+    <link href="bootstrap-5.1.3-dist/css/bootstrap.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--bottstrap est un framework CSS, autrement dit une boite a outil que l'on va ajouter a notre site-->
+    <h1>BOOTSTRAP</h1>
+
+    <div class="container">
+        <h2>les containerou block principaux</h2>
+    </div>
+
+
+    <div class=container-fluidc3>
+        <p>container-fluid</p>
+    </div>
+
+    <div class="container">
+        <h2>le systeme de grille</h2>
+
+        <h3>les lingne . row</h3>
+
+        <div class="row">une row</div>
+        <div class="row">une row</div>
+        <div class="row">une row</div>
+
+        <h3>les colonnes .col</h3>
+
+        <div class="row-no-gitters">
+        </div>
+        <div class="col">UNE COLLONE</div>
+        <div class="col">une collone</div>
+        <div class="col">une collone</div>
+
+    </div>
+
+
+    <h3>media-queries de BS .col-*</h3>
+    <!--bottstrap est concu en mobile first .col-*(extra small tel) .col-sm-*(small tablette) .col-md-*(mediaum 15 pouce) .col _lg_(large grand ecrant) .col -xl-*( extra large > 12000px)-->
+
+    <div class="row">
+        <div class="col">une collone</div>
+        <div class="col-6">une collone</div>
+        <div class="col">une collone</div>
+    </div>
+
+    <div class="row">
+        <div class="col-2">une collone</div>
+        <div class="col-9">une collone</div>
+        <div class="col-1">une collone</div>
+
+        <h2>les marge .offset<h /2>
+
+                <div class="row">
+                    <div class="col-md-4">.col-md-4</div>
+                    <div class="col-md-4-offset-md-4">.col-md-4 .offset-md-4</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3-offset-md-3">.colmd-4</div>
+                    <div class="col-md-3-offset-md-3">.col-md-3 .offset-md-3</div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6-offset-md-3"> .col-md-6 .offset-md-3</div>
+                </div>
+    </div>
+
+    <h2>alignement du texte</h2>
+
+    <div class="row">
+
+        <div class="col">
+
+            <p class="text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad vel aliquam, natus dicta
+                architecto voluptatum neque odio placeat, deserunt eius amet soluta, odit voluptate? Iusto sunt facilis
+                recusandae voluptas modi reprehenderit mollitia fugit! Culpa, dolor maiores! Neque qui est sapiente
+                quisquam veniam debitis perspiciatis facilis natus maiores modi? Reiciendis, expedita!</p>
+
+            <hr>
+
+            <p class="text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut aperiam omnis id
+                repudiandae voluptatibus cum voluptatem numquam et incidunt architecto illo iste iure doloremque est
+                obcaecati, quas expedita beatae iusto tempore vero aliquid necessitatibus dolore dignissimos! Similique
+                cumque perferendis sint, a quisquam eius in cum corporis debitis dolores odio necessitatibus.</p>
+
+            <hr>
+
+            <p class="text-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam aut pariatur non
+                quos in impedit ipsa minus illo. Omnis similique nihil deleniti numquam fuga libero tempore eaque minima
+                in neque, perferendis vel reiciendis consequatur vitae magnam aliquid praesentium consectetur, soluta
+                odit suscipit, nesciunt molestiae eum blanditiis. Quis, eaque consequuntur!</p>
+
+        </div>
+
+        <hr>
+
+        <h3>imbriquer des blocs de la grille : "nesting"</h3>
+
+        <div class="row">
+            <div class="col-sm-9">1er niveau : .col-sm-9
+                <div class="row">
+                    <div class="col-8 col-sm-6">2eme niveau : .col-8 .col-sm-6</div>
+
+                    <div class="col-4 col-sm-8"> 2eme niveau : ccol-4 .col-sm-6>
+                        <div class="row">
+                            <div class="col-4">niveau 3</div>
+                            <div class="col-4">lv3</div>
+                            <div class="col-4">lv3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h2>les couleur de BS</h2>
+        <h3> les alerts</h3>
+
+        <div class="alert alert-primary" role="alert">
+            A simple primary alert—check it out!
+        </div>
+        <div class="alert alert-secondary" role="alert">
+            A simple secondary alert—check it out!
+        </div>
+        <div class="alert alert-success" role="alert">
+            A simple success alert—check it out!
+        </div>
+        <div class="alert alert-danger" role="alert">
+            A simple danger alert—check it out!
+        </div>
+        <div class="alert alert-warning" role="alert">
+            A simple warning alert—check it out!
+        </div>
+        <div class="alert alert-info" role="alert">
+            A simple info alert—check it out!
+        </div>
+        <div class="alert alert-light" role="alert">
+            A simple light alert—check it out!
+        </div>
+        <div class="alert alert-dark" role="alert">
+            A simple dark alert—check it out!
+        </div>
+
+        <hr>
+
+        <h3>les boutons</h3>
+
+        <button type="button" class="btn btn-outline-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+
+        <button type="button" class="btn btn-link">Link</button>
+
+        <hr>
+
+        <h2>les formulaire</h2>
+
+        <form>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+
+
+        <h2>les tableau</h2>
+
+        <div class="col-6- m-auto">
+            <table class="table table dark table-hover">
+                <thead>
+                    <tr>
+                        <th class=col>#</th>
+                        <th class=col>Prenom</th>
+                        <th class=col>couleur</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Glenn</td>
+                        <td>Gurenn</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Kuro</td>
+                        <td>Shiro</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+
+        <h2>la nav bar</h2>
+
+        <nav class="navbar danger-dark bg-danger mb-5">
+            <div class="container-fluid">
+                <a class="navbar-brand link-light" href="#">Navbar</a>
+            </div>
+        </nav>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
